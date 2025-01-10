@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Reels</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        margin: 0;
+        background-color: #020911;
+        color: #fff;
+      }
+
+      .reels-section {
+        padding: 3rem 1rem;
+        text-align: center;
+      }
+
+      .fashion-title {
+        font-family: "Brasika Display - Trial", sans-serif;
+        color: #f7e770 !important;
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+        margin-top: -50px;
+        margin-left: 70px;
+        letter-spacing: 0.09em;
+      }
+
+      .video-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        gap: 1rem;
+        padding: 2rem 1rem;
+      }
+
+      .video-container video {
+        width: 23%;
+        border: 3px solid #9f87af;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .video-container video:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <h1>Sanskriti Mittal</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html" class="get-in-touch">Get In Touch</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Fashion Reels Section -->
+    <section class="reels-section">
+      <h1 class="fashion-title">Talking Head Reels</h1>
+      <div class="video-container">
+        <video>
+          <source src="./Talking_head/Growth Square.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video>
+          <source src="./Talking_head/Growth Square.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video>
+          <source src="./Talking_head/Growth Square.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video>
+          <source src="./Talking_head/Growth Square.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <script>
+      // Add click event listeners to all videos
+      document.querySelectorAll(".video-container video").forEach((video) => {
+        video.addEventListener("click", () => {
+          // Pause all videos except the one clicked
+          document.querySelectorAll(".video-container video").forEach((v) => {
+            if (v !== video) v.pause();
+          });
+
+          // Toggle play/pause for the clicked video
+          if (video.paused) {
+            video.play();
+          } else {
+            video.pause();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

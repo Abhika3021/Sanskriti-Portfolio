@@ -15,7 +15,13 @@
     <!-- Navbar -->
     <nav class="navbar">
       <div class="container">
-        <div class="logo">
+        <div class="menu-icon" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        
+        <div style="margin-right: 700px;" class="logo">
           <h1>Sanskriti Mittal</h1>
         </div>
         <ul class="nav-links">
@@ -23,6 +29,8 @@
           <li><a href="work.html">Works</a></li>
           <li><a href="contact.html" class="get-in-touch">Get in touch</a></li>
         </ul>
+
+        
       </div>
     </nav>
 
@@ -46,4 +54,11 @@
       <div class="black-ground"></div>
     </div>
   </body>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector(".nav-links");
+      navLinks.classList.toggle("active");
+    }
+  </script>
 </html>

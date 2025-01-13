@@ -1,2 +1,5 @@
 *.filetype filter=lfs diff=lfs merge=lfs -text
 *.mp4 filter=lfs diff=lfs merge=lfs -text
+Fashion[[:space:]]Reels/*.mp4 filter=lfs diff=lfs merge=lfs -text
+Talking_head/*.mp4 filter=lfs diff=lfs merge=lfs -text
+VO[[:space:]]Reels/*.mp4 filter=lfs diff=lfs merge=lfs -text

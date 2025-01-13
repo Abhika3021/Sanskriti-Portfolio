@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fashion Reels</title>
+    <title>Talking Head Reels</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
       body {
         margin: 0;
         background-color: #020911;
         color: #fff;
+        font-family: Arial, sans-serif;
       }
 
       .reels-section {
@@ -31,7 +32,6 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-
         gap: 1rem;
         padding: 2rem 1rem;
       }
@@ -48,6 +48,40 @@
       .video-container video:hover {
         transform: scale(1.05);
         box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7);
+      }
+
+      /* Media Queries */
+      @media (max-width: 1024px) {
+        .video-container video {
+          width: 30%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .fashion-title {
+          font-size: 2rem;
+          margin-left: 0;
+        }
+
+        .video-container video {
+          width: 45%;
+        }
+
+        .nav-links {
+          flex-direction: column;
+          gap: 0.5rem;
+          align-items: center;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .fashion-title {
+          font-size: 1.8rem;
+        }
+
+        .video-container video {
+          width: 100%;
+        }
       }
     </style>
   </head>

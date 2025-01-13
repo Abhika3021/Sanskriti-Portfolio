@@ -203,6 +203,11 @@ body {
   font-size: 1rem;
   display: inline-flex;
   align-items: center;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.curved-box:hover {
+  background-color: #d1b34a; /* Darker yellow shade when hovered */
 }
 
 /* Right Side Content */
@@ -302,7 +307,7 @@ body {
 
 .edu-years {
   display: flex;
-  align-items: flex-start; 
+  align-items: flex-start;
   margin-bottom: 25px;
   margin-left: 20px;
 }
@@ -313,7 +318,7 @@ body {
   color: white;
   display: inline-flex;
   align-items: flex-start;
-  min-width: 120px; 
+  min-width: 120px;
 }
 
 .year i {
@@ -324,7 +329,7 @@ body {
 
 .education-info {
   margin-top: -6px;
-  margin-left: 55px; 
+  margin-left: 55px;
 }
 
 .education-info p {
@@ -379,7 +384,7 @@ body {
 
 .edu-resume {
   display: grid;
-  
+
   gap: 20px;
 }
 
@@ -531,7 +536,6 @@ body {
   width: 2px;
   background-color: black;
 }
-
 
 .duration {
   font-size: 1.2rem;
@@ -1627,5 +1631,59 @@ video {
     margin-top: 0;
     font-size: 1.4rem;
     color: white;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1286px) {
+  .header-content {
+    margin: 0 5%;
+    width: 90%;
+  }
+
+  .header .portfolio-title span,
+  .header .portfolio-subtitle span {
+    font-size: 3rem;
+  }
+
+  .header .profile-image {
+    max-width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 724px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(8, 27, 44);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .header-content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .header .profile-image {
+    max-width: 200px;
+    height: 200px;
+  }
+
+  .header .portfolio-title span,
+  .header .portfolio-subtitle span {
+    font-size: 2rem;
   }
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fashion Reels</title>
+    <title>Voice Over Reels</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
       body {
@@ -31,7 +31,6 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-
         gap: 1rem;
         padding: 2rem 1rem;
       }
@@ -48,6 +47,28 @@
       .video-container video:hover {
         transform: scale(1.05);
         box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7);
+      }
+
+      @media (max-width: 768px) {
+        .fashion-title {
+          font-size: 2.2rem;
+          margin-left: 20px;
+        }
+
+        .video-container video {
+          width: 45%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .fashion-title {
+          font-size: 1.8rem;
+          margin-left: 10px;
+        }
+
+        .video-container video {
+          width: 90%;
+        }
       }
     </style>
   </head>
@@ -80,11 +101,11 @@
           Your browser does not support the video tag.
         </video>
         <video>
-          <source src="./Talking_head/1.mp4" type="video/mp4" />
+          <source src="./VO Reels/vo 1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <video>
-          <source src="./Talking_head/1.mp4" type="video/mp4" />
+          <source src="./VO Reels/vo 1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

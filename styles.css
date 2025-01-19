@@ -834,8 +834,8 @@ body {
 }
 
 .polaroid-box:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+  transform: scale(1.05); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Container for the section */
@@ -844,11 +844,9 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 50px;
-  /* Dual background colors */
   background: linear-gradient(to bottom, #020911 50%, #ffffff 50%);
 }
 
-/* Title and Description */
 .contact-title {
   font-family: "Brasika Display - Trial", sans-serif;
   color: #f7e770;
@@ -1449,6 +1447,26 @@ video {
     font-size: 15px;
     margin-left: 47px;
   }
+
+  .contact-title {
+    font-size: 2rem;
+    margin-left: 10px;
+    margin-top: -36px;
+  }
+
+  .section-description {
+    font-size: 1rem;
+    margin-left: 13px;
+  }
+
+  .contact-info h3 {
+    font-size: 1.3rem;
+   margin: 0 auto;
+  }
+
+  .info-list li {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1470,9 +1488,11 @@ video {
 
   .contact-info,
   .contact-form {
-    width: 100%;
+    width: 88%;
     margin-bottom: 20px;
   }
+
+
 }
 
 @media (max-width: 480px) {

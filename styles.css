@@ -567,7 +567,6 @@ body {
   color: #333;
 }
 
-
 /* Language Section */
 
 .language-title {
@@ -1159,7 +1158,7 @@ video {
 }
 
 /* Mobile View - 375px */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   /* Navbar */
   .navbar {
     justify-content: space-between;
@@ -1446,11 +1445,10 @@ video {
   }
 
   .reference-phone,
-.reference-email {
-  font-size: 15px;
-  margin-left: 47px;
-}
-  
+  .reference-email {
+    font-size: 15px;
+    margin-left: 47px;
+  }
 }
 
 @media (max-width: 768px) {
